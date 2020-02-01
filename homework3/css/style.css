@@ -1,0 +1,123 @@
+/*STARTER CODE*/
+
+/*
+We have started some of the selectors for you.
+For others we have provided hints on what the selectors should be.
+There are some missing selectors.
+
+Make sure to learn what the starter code does!!
+*/
+
+body{
+  background:url('../images/pigeon-background.JPEG') no-repeat #DDDDDD;
+  color: black;
+  font-family: "Andika", sans-serif;
+  font-size: 16px;
+  margin: 1.2em;
+  background-size: cover ;
+  background-position: center;
+}
+
+main{
+  margin-bottom: 100px;
+}
+:focus {
+  outline: 2px solid black;
+}
+
+h1{
+  color: #8000FF;
+  font-size: 2em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+caption{
+  margin:5px 0px;
+}
+
+p{
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+a{
+  font-size: 16px;
+  color: #B21F50;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+table{
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    border-collapse: separate;
+}
+
+thead tr th:first-child.colhead{
+  border-top-left-radius:15px;
+}
+
+thead tr th:last-child.colhead{
+  border-top-right-radius: 15px;
+}
+
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 15px;
+}
+
+tbody tr:last-child th.rowhead{
+  border-bottom-left-radius: 15px;
+}
+
+.colhead{
+  min-width: 100px;
+  padding: 10px;
+  background-color: #7e0820;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+.rowhead{
+  border: 2px;
+  border-color: black;
+}
+
+td{
+  text-align: center;
+  border-top: 2px solid black;
+  padding: 15px;
+}
+
+tr:nth-child(odd){
+  background: #D1D1D1;
+}
+tr:nth-child(even){
+  background-color: transparent;
+}
+tr:hover {
+  background-color: #7e0820;
+  opacity: 0.5;
+}
+
+tbody th.rowhead{
+  border-top: 2px solid black;
+}
+
+*{}
+
+
+footer{
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  background:black;
+  text-align:center;
+  color: white;
+  min-height: 60px;
+}
