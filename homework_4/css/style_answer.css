@@ -54,9 +54,9 @@ nav a:hover{
 }
 
 
-/*Your code here*/
-/*Add the selector and code to put a 2px black
-border around all elements in focus.*/
+*:focus{
+  border: 2px solid black;
+}
 
 
 footer{
