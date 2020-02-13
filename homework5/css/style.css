@@ -146,6 +146,7 @@ Keyframes for animation*/
   display: flex;
   flex-wrap: wrap;
   min-height: 600px;
+  align-items: center;
   justify-content: center;
 }
 
