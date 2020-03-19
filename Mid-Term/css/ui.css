@@ -1,0 +1,277 @@
+body{
+  font-family: 'DIN Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16pt; /* test for this! Make all sizes em or rem */
+}
+
+h1{
+  font-size: 2.5em;
+  line-height: 1.5;
+}
+
+h2{
+  font-size: 1.5em;
+
+}
+
+p {
+  font-size: 0.9em;
+  font-family: 'Calibri', sans-serif; /* Test for this*/
+}
+
+
+
+p2 {
+  font-size: 0.9em;
+  font-family: 'Calibri', sans-serif; /* Test for this*/
+  text-align: center;
+  padding: 0 30px;
+}
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.text_box{
+  margin: auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../Images/Project_3/render.jpg");
+  /* Set a specific height */
+  min-height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
+
+
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: white;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(5,auto);
+  grid-row-gap: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+/* form css end */
+
+
+
+#intro{
+  padding: 100px 30px 100px 30px;
+}
+
+
+
+.portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio_img {
+  width: 400px;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card_big{
+  width: 400px;
+  -webkit-transform: initial;
+          transform: initial;
+}
+
+#small_title{
+text-align: center;
+}
+
+
+/* Navbar */
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  padding: 0px 50px 0px 50px;
+}
+
+#logo{
+  color: white;
+}
+
+#navigation{
+  display: flex;
+  vertical-align: middle;
+}
+
+.nav_links{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+}
+
+.nav_item a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav_item a:hover, a:focus{
+  background-color: #0066cc;
+  color: white;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+#ui a{
+  background-color: #0066cc;
+}
+
+/* about page*/
+.profile_div_right{
+  grid-column: 1 / span 1;
+  margin: auto;
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+.qlink_img{
+    width: 400px;
+    padding: 0px 20px;
+}
+
+.profile_text_left{
+  padding: 0px 40px;
+  grid-column: 1/ span 1;
+  margin: auto;
+}
+
+@media screen and (min-width: 750px){
+
+  .contrainer{
+      grid-template-columns: 500px 500px;
+  }
+    .profile_div_right{
+      grid-column: 2 / span 1;
+    }
+
+    .profile_text_left{
+      grid-column: 1 / span 1;
+    }
+
+  .flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 333px;
+  }
+  /* Cards! */
+
+  .portfolio_img {
+      width: 500px;
+      margin: 0px;
+      border-radius: 7px;
+  }
+
+
+  .card_big{
+    -webkit-transform: scaleX(1.12);
+            transform: scaleX(1.12);
+  }
+
+  header{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nav_links{
+    flex-direction: row;
+  }
+
+  .nav_item a{
+    padding: 10px;
+  }
+
+  }
+
+
+@media screen and (min-width: 1200px){
+
+
+  /* Navbar */
+
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav_links{
+    flex-direction: row;
+  }
+
+  .nav_item a{
+    padding: 10px;
+  }
+}
+
+  .flip-card {
+    background-color: transparent;
+    width: 600px;
+    height: 400px;
+  }
+
+  .portfolio_img {
+      width: 600px;
+      margin: 0px;
+      border-radius: 7px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #logo {
+    animation: none;
+  }
+}
